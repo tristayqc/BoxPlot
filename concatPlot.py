@@ -4,7 +4,8 @@ import pandas as pd
 import os
 import glob
 import matplotlib.pyplot as plt
-import matplotlib.patches as PathPatch
+import numpy as np
+from scipy.stats import ttest_ind
 
 pathFS = r'C:\Users\Trist\Documents\GitHub\BoxPlot\ForestS'
 pathFNS = r'C:\Users\Trist\Documents\GitHub\BoxPlot\ForestNS'
@@ -37,6 +38,18 @@ df_fns.columns = ['Forest_NS']
 df_S.columns = ['Salient']
 df_NS.columns = ['Non-salient']
 
+print(np.average(df_us['Urban_S']), np.std(df_us['Urban_S']))
+print(np.average(df_uns['Urban_NS']), np.std(df_uns['Urban_NS']))
+print(np.average(df_fs['Forest_S']), np.std(df_fs['Forest_S']))
+print(np.average(df_fns['Forest_NS']), np.std(df_fns['Forest_NS']))
+print(np.average(df_S['Salient']), np.std(df_S['Salient']))
+print(np.average(df_NS['Non-salient']), np.std(df_NS['Non-salient']))
+
+# ttest_ind(df_us['Urban_S'], df_uns['Urban_NS'])
+
+# print(df_us['Urban_S'].mean(), df_us['Urban_S'].std())
+
+# %%
 plt.figure(figsize=(5, 8))
 
 # df of all four conditions
