@@ -7,10 +7,10 @@ import matplotlib.pyplot as plt
 import numpy as np
 from scipy.stats import ttest_ind
 
-pathFS = r'C:\Users\Trist\Documents\GitHub\BoxPlot\ForestS'
-pathFNS = r'C:\Users\Trist\Documents\GitHub\BoxPlot\ForestNS'
-pathUS = r'C:\Users\Trist\Documents\GitHub\BoxPlot\UrbanS'
-pathUNS = r'C:\Users\Trist\Documents\GitHub\BoxPlot\UrbanNS'
+pathFS = r'C:\Users\Trist\Documents\GitHub\BoxPlot\UrbanForest\ForestS'
+pathFNS = r'C:\Users\Trist\Documents\GitHub\BoxPlot\UrbanForest\ForestNS'
+pathUS = r'C:\Users\Trist\Documents\GitHub\BoxPlot\UrbanForest\UrbanS'
+pathUNS = r'C:\Users\Trist\Documents\GitHub\BoxPlot\UrbanForest\UrbanNS'
 
 
 # concatenate all files in a directory
