@@ -41,26 +41,6 @@ df_all6 = pd.concat([short_angle_T1_data, long_angle_T1_data,
                      short_angle_T3_data, long_angle_T3_data], axis = 1)
 df_all6.columns = labels
 
-# print(df_all6)
-
-# # Create a figure and axis object
-# fig, ax = plt.subplots()
-
-# # Create a boxplot of the data
-# bp = ax.boxplot(df_all6.values)
-
-# # Set the x-axis tick labels
-# ax.set_xticklabels(labels)
-
-# # Set the y-axis label
-# ax.set_ylabel('Angle')
-
-# # Set the title
-# ax.set_title('Boxplot of Angle Data')
-
-# # Show the plot
-# plt.show()
-
 # Create a figure and axis object
 fig, ax = plt.subplots(figsize=(10,5))
 
